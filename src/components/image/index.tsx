@@ -11,7 +11,7 @@ function Image(props: ImageProps) {
   const [loading, setLoading] = useState(false);
 
   return (
-    <View style={props.style}>
+    <View style={props?.style}>
       <RnImage
         {...props}
         onLoadStart={() => setLoading(true)}

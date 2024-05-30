@@ -74,7 +74,7 @@ export default function App() {
   return (
     <Provider store={store}>
       <StatusBar style='auto' />
-      {/* <RootNavigation /> */}
+      <RootNavigation />
       <ConfirmationDialog />
       <LoadingOverlay />
       <Toast config={toastConfig} />

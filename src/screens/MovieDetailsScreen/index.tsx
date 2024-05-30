@@ -35,11 +35,11 @@ const MovieDetailsScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <Padding style={styles.imgContainer}>
-        <Image
+        {/* <Image
           resizeMode='stretch'
           style={styles.imgBg}
           source={{ uri: movie['#IMG_POSTER'] }}
-        />
+        /> */}
         <AppButton
           textSize={13}
           style={styles.back}

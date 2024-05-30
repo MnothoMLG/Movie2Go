@@ -18,7 +18,6 @@ const Favourites = () => {
   const { navigate } =
     useNavigation<GenericMainStackScreenProps<routes.FAVS>>();
   const dispatch = useDispatch();
-  const [movieToGo, setmovie] = useState();
   const { t } = useTranslation();
   const { favourites } = useSelector(getMoviesState);
 
@@ -34,7 +33,7 @@ const Favourites = () => {
 
   return (
     <View style={styles.container}>
-      <FlatList
+      {/* <FlatList
         contentContainerStyle={styles.contentContainer}
         showsVerticalScrollIndicator={false}
         data={favourites}
@@ -57,7 +56,7 @@ const Favourites = () => {
             />
           </Swipeable>
         )}
-      />
+      /> */}
     </View>
   );
 };
