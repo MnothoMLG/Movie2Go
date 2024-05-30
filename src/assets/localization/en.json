@@ -1,0 +1,39 @@
+{
+  "home": {},
+  "common": {
+    "apply": "Apply",
+    "password": "Password",
+    "rank": "Rank",
+    "all": "All",
+    "imbd": "IMBD",
+    "actors": "Actors",
+    "next": "Next",
+    "sort": "Sort",
+    "save": "Save",
+    "return": "Return",
+    "cancel": "Cancel",
+    "retry": "Try again",
+    "confirm": "Confirm",
+    "change": "Change",
+    "error": "Error",
+    "limit": "Limit",
+    "delete": "Delete",
+    "info": "Info",
+    "select": "Select",
+    "back": "Back",
+    "search": "Search",
+    "or": "Or",
+    "noConnect": "No internet connection"
+  },
+  "favs": {
+    "empty": "You have no favourites yet."
+  },
+  "search": {
+    "noResults": "No results match your search.\n Please refine your search."
+  },
+
+  "loading": {
+    "more": "Loading more",
+    "wait": "Please wait..."
+  }
+}
