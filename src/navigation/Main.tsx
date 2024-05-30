@@ -11,7 +11,6 @@ import colors from '@theme/colors';
 const MainStackNav = createStackNavigator<MainStackParamList>();
 
 const Tab = createBottomTabNavigator<HomeTabParamList>();
-const tabs: String[] = [routes.HOME, routes.FAVS];
 
 export const TabNav = () => {
   return (
@@ -36,7 +35,7 @@ export const MainStack = () => {
       screenOptions={{
         ...noHeader,
       }}
-      initialRouteName={routes.HOME}
+      initialRouteName={routes.HOME_TAB}
     >
       <MainStackNav.Group
         screenOptions={{
@@ -52,7 +51,7 @@ export const MainStack = () => {
       </MainStackNav.Group>
 
       <MainStackNav.Screen
-        name={routes.HOME}
+        name={routes.HOME_TAB}
         {...noHeader}
         children={() => <TabNav />}
       />

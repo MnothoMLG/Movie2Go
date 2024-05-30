@@ -10,7 +10,7 @@ export type HomeTabParamList = {
 };
 
 export type MainStackParamList = {
-  [routes.HOME]: undefined;
+  [routes.HOME_TAB]: undefined;
   [routes.DETAILS]: { movie: IMovie };
   [routes.FAVS]: undefined;
 };

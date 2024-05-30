@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FlatList, TouchableHighlight, View } from 'react-native';
 import { Center, MovieItem, Text } from '@components';
 import styles from './styles';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMoviesState } from '@store/movies/selectors';
 import { useNavigation } from '@react-navigation/native';
-import Swipeable from 'react-native-swipeable';
 import { GenericMainStackScreenProps } from '@navigation/types';
 import { routes } from '@navigation/routes';
 import { useTranslation } from '@hooks/useTranslationHook';
@@ -33,7 +32,7 @@ const Favourites = () => {
 
   return (
     <View style={styles.container}>
-      {/* <FlatList
+      <FlatList
         contentContainerStyle={styles.contentContainer}
         showsVerticalScrollIndicator={false}
         data={favourites}
@@ -43,20 +42,14 @@ const Favourites = () => {
           </Center>
         }
         renderItem={({ item }) => (
-          <Swipeable
-            rightButtons={rightButtons(() => {
-              dislike(item);
-            })}
-          >
             <MovieItem
               onPress={() => {
                 navigate(routes.DETAILS, { movie: item });
               }}
               item={item}
             />
-          </Swipeable>
         )}
-      /> */}
+      />
     </View>
   );
 };
